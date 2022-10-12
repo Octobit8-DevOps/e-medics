@@ -11,6 +11,7 @@ pipeline {
             steps {
                 sh 'chmod 777 gradlew'
                 sh './gradlew clean'
+                sh './gradlew assembleRelease'
             }
         }
     }
