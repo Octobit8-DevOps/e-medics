@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'sudo chmod 777 gradlew'
+                sh 'chmod 777 gradlew'
                 sh './gradlew clean'
             }
         }
