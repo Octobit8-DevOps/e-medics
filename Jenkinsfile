@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh './gradlew build --scan'
+                sh 'gradle build'
             }
         }
     }
