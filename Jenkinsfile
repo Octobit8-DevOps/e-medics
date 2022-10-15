@@ -13,6 +13,7 @@
                
                     sh "pwd"
                     sh 'ls -al'
+                    sh 'chmod 777 gradlew'
                     sh './gradlew clean'
                    
         }
