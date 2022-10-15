@@ -10,11 +10,11 @@
                 sh 'echo $JAVA_HOME'
         }
         stage('Clean Build') {
-                dir("android") {
+               
                     sh "pwd"
                     sh 'ls -al'
                     sh './gradlew clean'
-                }   
+                   
         }
         
         stage('Build release ') {
