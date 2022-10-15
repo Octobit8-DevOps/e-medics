@@ -4,12 +4,11 @@
             git credentialsId: 'GitHubAccessJenkins', url: 'https://github.com/Octobit8-DevOps/e-medics.git'
         }
         stage('Dependencies') {
-                sh 'sudo npm install -g react-native-cli'
+                sh 'npm install -g react-native-cli'
                 sh 'npm install'
                 sh 'react-native link'
-                sh 'export JAVA_HOME=/opt/jdk1.8.0_201'
-                sh 'export JRE_HOME=/opt/jdk1.8.0_201/jre'
-                sh 'export PATH=$PATH:/opt/jdk1.8.0_201/bin:/opt/jdk1.8.0_201/jre/bin'
+                sh 'export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64'
+                sh 'export PATH=$PATH:/usr/lib/jvm/java-11-openjdk-amd64/bin'
                 sh 'echo $JAVA_HOME'
         }
         stage('Clean Build') {
