@@ -4,9 +4,7 @@
             git credentialsId: 'GitHubAccessJenkins', url: 'https://github.com/Octobit8-DevOps/e-medics.git'
         }
         stage('Dependencies') {
-                sh 'npm install -g react-native-cli'
-                sh 'npm install'
-                sh 'react-native link'
+               
                 sh 'export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64'
                 sh 'export PATH=$PATH:/usr/lib/jvm/java-11-openjdk-amd64/bin'
                 sh 'echo $JAVA_HOME'
