@@ -4,7 +4,7 @@ try {
     node {
       
         stage('Preparation') { 
-            git credentialsId: 'fef4159e-285b-45d9-80ca-5981c4576ba5', url: 'https://github.com/prashant-bhatasana/demoApp/'
+            git credentialsId: 'GitHubAccessJenkins', url: 'https://github.com/Octobit8-DevOps/e-medics.git'
         }
       
         stage('Dependencies') {
